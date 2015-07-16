@@ -56,3 +56,7 @@ If you want to challenge yourself to be the very best you can, contact us, we ha
 * Web Crawling (Scrapy)
 * Image Processing (OCR)
 * Neural Networks
+
+## Interested ?
+
+Just contact: emanuel.cordioli@neoway.com.br
