@@ -5,7 +5,7 @@ Welcome to Data Pirates challenge.
 
 ## Scenario:
 
-The Internet Movie Database (IMDb) is an online database of information about music, movies, movies, TV shows and games and television games computer. [Wikipedia]. This challenge consiste to collect information from this site and delivery it other format.
+The Internet Movie Database (IMDb) is an online database of information about music, movies, movies, TV shows and games and television games computer. [Wikipedia]. This challenge consist to collect information from this site and deliver it other format.
 
 
 ## Requirements:
