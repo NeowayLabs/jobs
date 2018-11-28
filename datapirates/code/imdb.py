@@ -3,14 +3,24 @@ from bs4 import BeautifulSoup
 import re
 import json
 
-def extract_genres(self, response):
+def extract_genres(self, response):	
+    ''' 
+    	Extract genre list from imdb, getting genre list from 
+	https://www.imdb.com/search/title,so if genre list change
+	because of some reason this scripting don't need to be
+	a changed.
+	
+        :param self: Instance of the class ImdbSpider
+        :param response: The Response object from scrapy
+        :return: returns genres list
+    '''
     genres = []
     index = 1
     for genre in response.css('div.clause:nth-of-type(6) table'):
         soup = BeautifulSoup(genre.extract())
         index += 1
         genres = [str(genre).replace(' ', '') for genre in soup.get_text().split('\n') if str(genre) != '']
-    return (genres)
+    return genres
 
 def generate_urls(genres):
     genre_list_to_search = []
