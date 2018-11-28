@@ -1,18 +1,17 @@
+# -*- coding: utf-8 -*-
 import scrapy
 from bs4 import BeautifulSoup
 import re
 import json
-
 def extract_genres(self, response):	
-    ''' 
-    	Extract genre list from imdb, getting genre list from 
-	https://www.imdb.com/search/title,so if genre list change
-	because of some reason this scripting don't need to be
-	a changed.
+    ''' Extract genre list from imdb, getting genre list from 
+        https://www.imdb.com/search/title,so if genre list change
+        because of some reason this scripting don't need to be
+        a changed.
 	
-        :param self: Instance of the class ImdbSpider
-        :param response: The Response object from scrapy
-        :return: returns genres list
+       :param self: Instance of the class ImdbSpider
+       :param response: The Response object from scrapy
+       :return: returns genres list
     '''
     genres = []
     index = 1
@@ -23,6 +22,11 @@ def extract_genres(self, response):
     return genres
 
 def generate_urls(genres):
+    '''Generate a list of URLs to search sorted by 'Rating'.
+	
+       :param genres: genre list of IMDB 
+       :return: returns URLs list to search
+    '''
     genre_list_to_search = []
     for genre in genres:
         start = 1
@@ -33,19 +37,31 @@ def generate_urls(genres):
     return genre_list_to_search
 
 def extract_genre_from_url(url):
+    '''Extract genre from url.
+	
+       :param url: url which will be extracted genre
+       :return: returns genre
+    '''
     s = 'asdf=5;iwantthis123jasd'
     return re.search('genres=(.*)&sor', url).group(1)
 
-def create_jsonl(title):
-	with open('{}.jsonl'.format(title['genre']), 'a') as outfile:
-            json.dump(title, outfile)
-            outfile.write('\n')
-            outfile.close()
+def add_jsonl(title):
+    '''Add the title to the jsonl specific file per genre.
+	
+       :param title: which will be add to the jsonl specific file
+       :return: returns anything "void"
+    '''
+    with open('{}.jsonl'.format(title['genre']), 'a') as outfile:
+        json.dump(title, outfile)
+        outfile.write('\n')
+        outfile.close()
 
 class ImdbSpider(scrapy.Spider):
+    '''ImdbSpider is a Spider class from Scrapy with informations
+       how to scrape information from IMDB 
+    '''  
     name = 'imdb_spider'
     start_urls = ['https://www.imdb.com/search/title']
-
 
     def parse(self, response):
         urls = generate_urls(extract_genres(self, response))
@@ -63,5 +79,5 @@ class ImdbSpider(scrapy.Spider):
                 'votes': int(item.css('p.sort-num_votes-visible span::attr("data-value")').extract()[0]),
                 'genre': extract_genre_from_url(response.url)
             }
-            create_jsonl(item_extract)
+            add_jsonl(item_extract)
             
