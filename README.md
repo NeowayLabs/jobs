@@ -4,4 +4,5 @@ A list of jobs available at Neoway
 
 # Datapirates
 
-* [Junior Developer](datapirates/junior-developer.md)
+* [JChallenge 1](datapirates/challenge.md)
+* [JChallenge 2](datapirates/challengePirates.md)
