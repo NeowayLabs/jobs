@@ -3,6 +3,7 @@ import scrapy
 from bs4 import BeautifulSoup
 import re
 import json
+
 def extract_genres(self, response):	
     ''' Extract genre list from imdb, getting genre list from 
         https://www.imdb.com/search/title,so if genre list change
