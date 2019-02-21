@@ -1,4 +1,4 @@
-Exercício
+NExercício
 =========
 
 Objetivo
@@ -31,10 +31,7 @@ exemplo desse arquivo é:
 
 Para que o resultado do esforço dos cientistas de dados ganhe valor,
 esses dados devem ser injetados na plataforma para que outras
-aplicações façam uso desses indicadores. O meio de persistência é de
-sua escolha: apenas em memória *RAM* durante a execução, arquivo de
-texto ou um banco de dados como *SQLite* ou *PostgreSQL*. Mas note que
-aprioridade desse teste é a integração do pipeline proposto.
+aplicações façam uso desses indicadores.
 
 A Missão
 --------
@@ -47,6 +44,11 @@ A Missão
   diretório contendo arquivos com os dados e envie para o serviço
   http. Deverá conter um comando a parte também para consulta baseado
   no atributo `pk`.
+
+* Nota: O meio de persistência é de sua escolha: apenas em memória
+*RAM* durante a execução, arquivo de texto ou um banco de dados como
+*SQLite* ou *PostgreSQL*. Mas note que a prioridade desse teste é a
+integração do pipeline proposto.
 
 Considerações
 -------------
@@ -71,7 +73,7 @@ gostaríamos muito de ver as suas habilidades com essa ferramenta.
   [git](https://git-scm.com).
 
 * Pense sempre na qualidade do código, tenha a manutenibilidade,
-legibilidade esimplicidade em mente. Lute contra
+legibilidade e simplicidade em mente. Lute contra
 [overengineering](https://en.wikipedia.org/wiki/Overengineering)!
 
 * Lembre que são vários modelos, e cada modelo gera uma grande volume
