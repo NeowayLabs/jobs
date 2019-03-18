@@ -23,5 +23,7 @@ Delivery:
 The code should be sent through github, with documentation how to run it.
 
 References:
+
 http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
+
 http://jsonlines.org
