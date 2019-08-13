@@ -12,7 +12,7 @@ Hello, we have one small adventure to explore your skills. In this task you have
 
 *  Start URL : http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
 *  Get data at least two UFs, the more the better
-*  For each UF, capture at least 100 records (when they exist).
+*  For each UF, capture at least 200 records (when they exist).
 *  Each record must contain a "localidade" and a "faixa de cep"
 *  The output format is [JSONL](http://jsonlines.org)
 
@@ -26,7 +26,7 @@ http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
 http://jsonlines.org
 
 ## Pay atention:
- * There is no right answere, we want to see how you solve problems.
+ * There is no right answer, we want to see how you solve problems.
  * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more confortable.
  * We use [Docker](https://www.docker.com/) a lot, not required but is a plus.
  * Unit tests are cool.
