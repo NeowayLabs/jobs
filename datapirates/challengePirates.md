@@ -1,17 +1,17 @@
 # Data Pirates challenge
 
-Welcome to Data Pirates challenge.
+Welcome to the Data Pirates challenge.
 
 
 ## Scenario
 
-Hello! We have a small adventure to explore your skills. In this task you have to scrape data from a website and write the results to a file. You will collect data from 'correios' website.
+Hello! We have a small adventure to put your skills to the test. In this task you have to collect data from a website and then write the results to a file.
 
 
 ## Requirements
 
 *  Use the http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm URL;
-*  Get data at least two UFs. The more, the better;
+*  Get data from at least two UFs. The more, the better;
 *  For each UF, capture at least 200 records (when they exist);
 *  Each record **must** contain 3 fields: "localidade", "faixa de cep" and a generated "id" to deduplicate records;
 *  The output format must be [JSONL](http://jsonlines.org)
@@ -30,11 +30,11 @@ http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
 
 http://jsonlines.org
 
-## Pay atention
+## Pay attention
  * There is no right answer, we want to see how you solve problems.
- * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more confortable.
+ * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more comfortable.
  * We use [Docker](https://www.docker.com/) a lot, not required but is a plus.
  * Unit tests are mandatory.
- * Show us that you can use all the git good pratices.
- * Think in the quality of your code, maintenability, legibility and simplicity, avoid overengineering.
- * Its important we can execute your project, so make clear what steps we need to take to run your project.
+ * Show us that you can use all git good practices.
+ * Think in the quality of your code, maintainability, legibility and simplicity, avoid overengineering.
+ * It's important we can execute your project, so make it clear which steps we need to follow to test and execute your project.
