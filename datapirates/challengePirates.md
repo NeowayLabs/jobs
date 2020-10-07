@@ -31,8 +31,8 @@ http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
 http://jsonlines.org
 
 ## Pay attention
- * There is no right answer, we want to see how you solve problems.
- * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more comfortable.
+ * We will evaluate how you solve problems and what are your results.
+ * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more comfortable with.
  * We use [Docker](https://www.docker.com/) a lot, not required but is a plus.
  * Unit tests are mandatory.
  * Show us that you can use all git good practices.
