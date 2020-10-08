@@ -31,7 +31,7 @@ http://www.buscacep.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
 http://jsonlines.org
 
 ## Pay attention
- * We will evaluate how you solve problems and what are your results.
+ * There is no right answer, we will evaluate how you solve problems and what are your results you can get.
  * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more comfortable with.
  * We use [Docker](https://www.docker.com/) a lot, not required but is a plus.
  * Unit tests are mandatory.
