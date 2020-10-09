@@ -33,8 +33,5 @@ http://jsonlines.org
 ## Pay attention
  * There is no right answer, we will evaluate how you solve problems and what are the results achieved.
  * We work mainly with [Python 3](https://www.python.org) and [Go](https://golang.org/), but feel free to use any language you feel more comfortable with.
- * We use [Docker](https://www.docker.com/) a lot, not required but is a plus.
  * Unit tests are cool.
- * Show us that you can use all git good practices.
- * Think in the quality of your code, maintainability, legibility and simplicity, avoid overengineering.
  * It's important we can execute your project, so make it clear which steps we need to follow to test and execute your project.
