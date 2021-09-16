@@ -10,7 +10,7 @@ Hello! We have a small adventure to put your skills to the test. In this task yo
 
 ## Requirements
 
-*  Use the https://buscacepinter.correios.com.br/app/faixa_cep_uf_localidade/index.php URL;
+*  Use the https://www2.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm URL;
 *  Get data from at least two UFs. The more, the better;
 *  Collect all records for each UF;
 *  Each record **must** contain **at least** 3 fields: "localidade", "faixa de cep" and a generated "id". Do not let duplicate records in your output file;
@@ -26,7 +26,7 @@ Hello! We have a small adventure to put your skills to the test. In this task yo
 
 References:
 
-https://buscacepinter.correios.com.br/app/faixa_cep_uf_localidade/index.php
+https://www2.correios.com.br/sistemas/buscacep/buscaFaixaCep.cfm
 
 http://jsonlines.org
 
