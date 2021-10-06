@@ -3,7 +3,7 @@ import requests
 import json
 import os
 
-#clear de degug
+#clear de debug
 os.system("cls")
 
 def request(UF):
