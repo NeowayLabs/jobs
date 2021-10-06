@@ -1,6 +1,3 @@
-import pytest
-from bs4 import BeautifulSoup as bs
-
 from bot_busca_localidade_e_faixa_de_cep import *
 def test_request():
     header = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0'}
@@ -17,14 +14,12 @@ def test_retornar_tabela():
 def test_retornar_UF():
     request_SP = request('SP')
     tabelas = retornar_tabela(request_SP)
-    print(type(tabelas))
     ID_UF = retornar_uf(tabelas)
     assert ID_UF == 'SP'
 
 def test_retornar_json_final():
     request_SP = request('SP')
     tabelas = retornar_tabela(request_SP)
-    print(type(tabelas))
     ID_UF = retornar_uf(tabelas)
     obj_json_final = retornar_json(tabelas, ID_UF)
     assert len(obj_json_final) != 0

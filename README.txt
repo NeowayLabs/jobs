@@ -1,8 +1,14 @@
-PROCEDIMENTOS PARA TESTAR O SCRIPT:
+Procedimentos para executar o script:
 
--- TENHA INSTALADO UMA VERSÃO DO PYTHON 3 COM VIRTUALENV;
--- CRIE UMA PASTA COM AMBIENTE VIRTUAL;
--- CLONE O REPOSITÓRIO PARA SUA MAQUINA LOCAL;
--- INSTALE AS DEPENDÊNCIAS (ARQUIVO DE REQUERIMENTS.TXT);
--- EXECUTE O COMANDO python bot_busca_localidade_e_faixa_de_cep.py;
--- APÓS EXECUÇÃO, DEVEM EXISTIR DOIS ARQUIVOS - faixas_cep_SP.txt & faixas_cep_RJ.txt.
+-- Tenha instalado uma versão do python 3 com virtualenv;
+-- Crie uma pasta para o ambiente virtual;
+-- Clone o repositório para sua máquina local;
+-- Instale as dependências (arquivo de requeriments.txt);
+-- Execute o comando python bot_busca_localidade_e_faixa_de_cep.py;
+-- Após execução, devem existir dois arquivos - faixas_cep_SP.txt & faixas_cep_RJ.txt.
+
+Procedimentos para testar o script:
+-- Instalado o pytest, execute o comando pytest.
+-- Automaticamente as funções no arquivo 
+test_busca_localidade_e_faixa_de_cep.py serão executadas.
+-- A cobertura dos testes será informada na tela.
