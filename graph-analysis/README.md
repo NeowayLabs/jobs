@@ -84,5 +84,5 @@ O teste será avaliado considerando os seguintes critérios:
 Este teste simula um cenário real que a pessoa candidata a vaga poderá enfrentar na posição. O foco não está apenas na solução técnica, mas também na habilidade em justificar suas decisões e produzir um código que seja eficiente e escalável.
 
 ## Anexos: 
-**Especificação do modelo:**
+[Especificação do modelo](./spec/README.md)
 
