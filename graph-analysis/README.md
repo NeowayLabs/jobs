@@ -1,10 +1,10 @@
 # Teste Prático: Desenvolvimento Backend com Go e Banco de Dados Neo4J
 
 ## Objetivo:
-Avaliar a proficiência da pessoa candidata a vaga na linguagem Go, manipulação de bancos de dados e a capacidade de trabalhar com grandes volumes de dados e algoritmos de grafos utilizando o Neo4J.
+Avaliar a proficiência da pessoa candidata na linguagem Go, manipulação de bancos de dados e a capacidade de trabalhar com grandes volumes de dados e algoritmos de grafos utilizando o Neo4J.
 
 ## Descrição Geral:
-A pessoa candidata a vaga deve baixar um conjunto de dados em formato CSV, realizar a carga desses dados no banco de dados Neo4J de forma eficiente, e criar uma API REST em Go que permita a consulta ao banco de dados usando cypher query e algoritmos de grafos.
+A pessoa candidata deve baixar um conjunto de dados em formato CSV, realizar a carga desses dados no banco de dados Neo4J de forma eficiente, e criar uma API REST em Go que permita a consulta ao banco de dados usando cypher query e algoritmos de grafos.
 Testes devem ser implementados para a garantia da qualidade da entrega.
 
 ## Instruções
@@ -17,7 +17,7 @@ Testes devem ser implementados para a garantia da qualidade da entrega.
 **Processamento e Carga no Neo4J:**
 - Com base no modelo anexo ao final do descritivo:
 - Realizar a carga desses dados para o Neo4J, considerando que no dia a dia da empresa trabalhará com grandes volumes.
-- Não é permitido utilizar o comando `LOAD CSV` diretamente via Cypher. A pessoa candidata a vaga deve utilizar uma abordagem mais eficiente, como utilizar o `neo4j-admin` para a carga direta dos arquivos CSV ou desenvolver uma ferramenta para tal tarefa que ele mesmo implemente.
+- Não é permitido utilizar o comando `LOAD CSV` diretamente via Cypher. A pessoa candidata deve utilizar uma abordagem mais eficiente, como utilizar o `neo4j-admin` para a carga direta dos arquivos CSV ou desenvolver uma ferramenta para tal tarefa que ela mesmo implemente.
 - Deverá fornecer a documentação de como planejou e executou a carga dos dados, justificando as escolhas tomadas.
 
 ### 2. Criação da API REST em Go
@@ -46,12 +46,12 @@ Testes devem ser implementados para a garantia da qualidade da entrega.
 - Seu objetivo é encontrar o menor caminho temporal de disseminação do vírus entre a origem e outros países.
 - Leve em consideração apenas os países que registraram casos de Covid-19.
 - A diferença de dias entre o primeiro caso em dois países deve ser usada como o peso dos relacionamentos entre esses países no grafo.
-- Construa o grafo de maneira que ele represente adequadamente a propagação do vírus através das datas dos primeiros registros de casos.
+- Construa o grafo de maneira que ela represente adequadamente a propagação do vírus através das datas dos primeiros registros de casos.
 - Imagine que o primeiro caso na China foi registrado em 15 de janeiro de 2020, e o primeiro caso na Itália foi registrado em 31 de janeiro de 2020. Se o Irã registrou seu primeiro caso em 25 de janeiro de 2020, você deve considerar que a disseminação do vírus pode ter seguido o caminho `China -> Irã -> Itália`.
 - Calcule o número total de dias que teria levado para o vírus se espalhar seguindo esse caminho, e compare com outras possíveis rotas para determinar o caminho mais rápido.
 
-- A API deve ser bem estruturada e seguir as melhores práticas em Go. a pessoa candidata a vaga deve se preocupar com a performance e a escalabilidade da solução.
-- A pessoa candidata a vaga deve implementar testes unitários e opcionalmente de integração para os endpoints da API.
+- A API deve ser bem estruturada e seguir as melhores práticas em Go. a pessoa candidata deve se preocupar com a performance e a escalabilidade da solução.
+- A pessoa candidata deve implementar testes unitários e opcionalmente de integração para os endpoints da API.
 
 ### 3. Entrega e Documentação
 
@@ -64,11 +64,11 @@ Testes devem ser implementados para a garantia da qualidade da entrega.
 - Recomenda-se o uso de docker compose e Makefile para a orquestração de tudo, API, Neo4J, ETL, etc.
 
 **Documentação:**
-- A pessoa candidata a vaga deve incluir uma documentação detalhada explicando a abordagem tomada para a carga dos dados, como a API foi implementada, e as decisões técnicas mais importantes. 
+- A pessoa candidata deve incluir uma documentação detalhada explicando a abordagem tomada para a carga dos dados, como a API foi implementada, e as decisões técnicas mais importantes. 
 - Devem ser fornecidos exemplos de uso dos endpoints da API. Recomenda-se o uso de OpenAPI.
 
 **Considerações de Performance:**
-- A pessoa candidata a vaga deve evidenciar como garantiria a performance e escalabilidade da API em um ambiente de produção, considerando o volume de dados e as consultas realizadas.
+- A pessoa candidata deve evidenciar como garantiria a performance e escalabilidade da API em um ambiente de produção, considerando o volume de dados e as consultas realizadas.
 
 ## Avaliação
 O teste será avaliado considerando os seguintes critérios:
@@ -81,7 +81,7 @@ O teste será avaliado considerando os seguintes critérios:
 - **Escalabilidade:** Considerações sobre performance e escalabilidade.
 
 ## Considerações Finais
-Este teste simula um cenário real que a pessoa candidata a vaga poderá enfrentar na posição. O foco não está apenas na solução técnica, mas também na habilidade em justificar suas decisões e produzir um código que seja eficiente e escalável.
+Este teste simula um cenário real que a pessoa candidata poderá enfrentar na posição. O foco não está apenas na solução técnica, mas também na habilidade em justificar suas decisões e produzir um código que seja eficiente e escalável.
 
 ## Anexos: 
 [Especificação do modelo](./spec/README.md)
