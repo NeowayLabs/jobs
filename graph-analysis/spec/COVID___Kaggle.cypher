@@ -1,0 +1,15 @@
+CREATE 
+  (`0` :Vaccine {company:'String',vaccine:'String',product:'String'}),
+  (`1` :CovidStats {cumulativeDeaths:'Integer',newDeaths:'Integer',cumulativeCases:'Integer',newCases:'Integer'}),
+  (`2` :VaccinationStats {personsBoosterAddDosePer100:'Integer',personsBoosterAddDose:'Integer',personsLastDosePer100:'Integer',personsLastDose:'Integer',personsVaccinated1PlusDosePer100:'Integer',totalVaccinationsPer100:'Integer',personsVaccinated1PlusDose:'Integer',totalVaccinations:'Integer'}),
+  (`3` :Date {date:'Date'}),
+  (`4` :Region {name:'String'}),
+  (`5` :Country {name:'String',code:'String'}),
+  (`2`)-[:ON_DATE ]->(`3`),
+  (`5`)-[:VACCINATED_ON ]->(`2`),
+  (`0`)-[:STARTED_ON ]->(`3`),
+  (`0`)-[:AUTHORIZATION_ON ]->(`3`),
+  (`5`)-[:USES ]->(`0`),
+  (`1`)-[:ON_DATE ]->(`3`),
+  (`5`)-[:REPORTED_ON ]->(`1`),
+  (`5`)-[:BELONGS ]->(`4`)

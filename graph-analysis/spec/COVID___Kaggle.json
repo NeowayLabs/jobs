@@ -1,0 +1,639 @@
+{
+  "metadata": {
+    "cypherWorkbenchVersion": "1.5.0",
+    "title": "COVID - Kaggle",
+    "dateCreated": "1725386242404",
+    "dateUpdated": "1725396280140",
+    "description": "Graph Test",
+    "notes": "",
+    "isInstanceModel": false,
+    "tags": [],
+    "customers": [],
+    "owners": [
+      {
+        "email": "admin",
+        "__typename": "User"
+      }
+    ],
+    "viewSettings": {
+      "parentContainerViewSettings": {
+        "rightDrawerOpen": false,
+        "rightDrawerOpenWidth": "800px",
+        "destinationTabIndex": 0,
+        "exportSettings": {}
+      },
+      "canvasViewSettings": {
+        "currentPan": {
+          "x": 35,
+          "y": 41
+        },
+        "currentOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "scaleFactor": 1
+      }
+    }
+  },
+  "dataModel": {
+    "nodeLabels": {
+      "Node10": {
+        "classType": "NodeLabel",
+        "label": "Vaccine",
+        "fromDataSources": [],
+        "key": "Node10",
+        "indexes": [],
+        "properties": {
+          "Prop37": {
+            "key": "Prop37",
+            "name": "company",
+            "datatype": "String",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          },
+          "Prop36": {
+            "key": "Prop36",
+            "name": "vaccine",
+            "datatype": "String",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          },
+          "Prop35": {
+            "key": "Prop35",
+            "name": "product",
+            "datatype": "String",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#607d8b",
+          "stroke": "#1b3844",
+          "strokeWidth": 4,
+          "x": 1400,
+          "y": 160,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true
+      },
+      "Node9": {
+        "classType": "NodeLabel",
+        "label": "CovidStats",
+        "fromDataSources": [],
+        "key": "Node9",
+        "indexes": [],
+        "properties": {
+          "Prop26": {
+            "key": "Prop26",
+            "name": "cumulativeDeaths",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop25": {
+            "key": "Prop25",
+            "name": "newDeaths",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop24": {
+            "key": "Prop24",
+            "name": "cumulativeCases",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop23": {
+            "key": "Prop23",
+            "name": "newCases",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#ff5722",
+          "stroke": "#a20000",
+          "strokeWidth": 4,
+          "x": 440,
+          "y": 460,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true
+      },
+      "Node3": {
+        "classType": "NodeLabel",
+        "label": "VaccinationStats",
+        "fromDataSources": [],
+        "key": "Node3",
+        "indexes": [],
+        "properties": {
+          "Prop34": {
+            "key": "Prop34",
+            "name": "personsBoosterAddDosePer100",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop33": {
+            "key": "Prop33",
+            "name": "personsBoosterAddDose",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop32": {
+            "key": "Prop32",
+            "name": "personsLastDosePer100",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop31": {
+            "key": "Prop31",
+            "name": "personsLastDose",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop30": {
+            "key": "Prop30",
+            "name": "personsVaccinated1PlusDosePer100",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop29": {
+            "key": "Prop29",
+            "name": "totalVaccinationsPer100",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop28": {
+            "key": "Prop28",
+            "name": "personsVaccinated1PlusDose",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          },
+          "Prop27": {
+            "key": "Prop27",
+            "name": "totalVaccinations",
+            "datatype": "Integer",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": false,
+            "hasUniqueConstraint": false
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#607d8b",
+          "stroke": "#1b3844",
+          "strokeWidth": 4,
+          "x": 700,
+          "y": 380,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true
+      },
+      "Node2": {
+        "classType": "NodeLabel",
+        "label": "Date",
+        "fromDataSources": [],
+        "key": "Node2",
+        "indexes": [],
+        "properties": {
+          "Prop21": {
+            "key": "Prop21",
+            "name": "date",
+            "datatype": "Date",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#ffeb3b",
+          "stroke": "#a89c00",
+          "strokeWidth": 4,
+          "x": 780,
+          "y": 620,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "black",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true
+      },
+      "Node1": {
+        "classType": "NodeLabel",
+        "label": "Region",
+        "fromDataSources": [],
+        "key": "Node1",
+        "indexes": [],
+        "properties": {
+          "Prop20": {
+            "key": "Prop20",
+            "name": "name",
+            "datatype": "String",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#3f51b5",
+          "stroke": "#001468",
+          "strokeWidth": 4,
+          "x": 360,
+          "y": 180,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true
+      },
+      "Node0": {
+        "classType": "NodeLabel",
+        "label": "Country",
+        "fromDataSources": [],
+        "key": "Node0",
+        "indexes": [],
+        "properties": {
+          "Prop19": {
+            "key": "Prop19",
+            "name": "name",
+            "datatype": "String",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": false,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          },
+          "Prop18": {
+            "key": "Prop18",
+            "name": "code",
+            "datatype": "String",
+            "referenceData": null,
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#3f51b5",
+          "stroke": "#001468",
+          "strokeWidth": 4,
+          "x": 580,
+          "y": 100,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true
+      }
+    },
+    "relationshipTypes": {
+      "Rel18": {
+        "classType": "RelationshipType",
+        "key": "Rel18",
+        "type": "ON_DATE",
+        "startNodeLabelKey": "Node3",
+        "endNodeLabelKey": "Node2",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel17": {
+        "classType": "RelationshipType",
+        "key": "Rel17",
+        "type": "VACCINATED_ON",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node3",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel16": {
+        "classType": "RelationshipType",
+        "key": "Rel16",
+        "type": "STARTED_ON",
+        "startNodeLabelKey": "Node10",
+        "endNodeLabelKey": "Node2",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 25,
+          "glyph": null
+        }
+      },
+      "Rel15": {
+        "classType": "RelationshipType",
+        "key": "Rel15",
+        "type": "AUTHORIZATION_ON",
+        "startNodeLabelKey": "Node10",
+        "endNodeLabelKey": "Node2",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": -25,
+          "glyph": null
+        }
+      },
+      "Rel14": {
+        "classType": "RelationshipType",
+        "key": "Rel14",
+        "type": "USES",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node10",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel13": {
+        "classType": "RelationshipType",
+        "key": "Rel13",
+        "type": "ON_DATE",
+        "startNodeLabelKey": "Node9",
+        "endNodeLabelKey": "Node2",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel12": {
+        "classType": "RelationshipType",
+        "key": "Rel12",
+        "type": "REPORTED_ON",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node9",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel1": {
+        "classType": "RelationshipType",
+        "key": "Rel1",
+        "type": "BELONGS",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node1",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      }
+    }
+  }
+}
