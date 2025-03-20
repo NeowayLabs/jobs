@@ -14,7 +14,7 @@ O arquivo de modelo (Covid_19___Simple.json) foi gerado e pode ser carregado usa
 - **README.md** Este próprio arquivo com instruções
 - **Covid_19___Simple.png** Contém uma imagem do modelo de grafos necessário para a implementação da solução
 - **Covid_19___Simple.cypher** Contém dados de exemplo para melhor entendimento do modelo
-- **COVID___Kaggle.json** Contém o modelo para ser carregado no cypher-workbench
+- **Covid_19___Simple.json** Contém o modelo para ser carregado no cypher-workbench
 
 # Neo4J
 
