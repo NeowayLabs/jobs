@@ -1,0 +1,477 @@
+{
+  "metadata": {
+    "cypherWorkbenchVersion": "1.8.0",
+    "title": "Covid 19 - Simple",
+    "description": "",
+    "notes": "",
+    "customer": "",
+    "authors": "",
+    "tags": "",
+    "dateCreated": "1742485023330",
+    "dateUpdated": "1742485668932",
+    "viewSettings": {
+      "parentContainerViewSettings": {
+        "rightDrawerOpen": false,
+        "rightDrawerOpenWidth": "800px",
+        "destinationTabIndex": 0,
+        "exportSettings": {}
+      },
+      "canvasViewSettings": {
+        "currentPan": {
+          "x": 0,
+          "y": 0
+        },
+        "currentOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "scaleFactor": 1
+      }
+    }
+  },
+  "dataModel": {
+    "nodeLabels": {
+      "Node0": {
+        "classType": "NodeLabel",
+        "label": "Country",
+        "fromDataSources": [],
+        "key": "Node0",
+        "indexes": [],
+        "properties": {
+          "Prop0": {
+            "key": "Prop0",
+            "name": "id",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop1": {
+            "key": "Prop1",
+            "name": "name",
+            "datatype": "String",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop2": {
+            "key": "Prop2",
+            "name": "iso3",
+            "datatype": "String",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#ff9800",
+          "stroke": "#a44f00",
+          "strokeWidth": 4,
+          "x": 420,
+          "y": 160,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "x": 420,
+        "y": 160,
+        "hasAnnotation": true
+      },
+      "Node2": {
+        "classType": "NodeLabel",
+        "label": "Vaccine",
+        "fromDataSources": [],
+        "key": "Node2",
+        "indexes": [],
+        "properties": {
+          "Prop3": {
+            "key": "Prop3",
+            "name": "id",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop4": {
+            "key": "Prop4",
+            "name": "name",
+            "datatype": "String",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": false,
+            "hasUniqueConstraint": true
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#2196f3",
+          "stroke": "#004fa2",
+          "strokeWidth": 4,
+          "x": 220,
+          "y": 380,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "x": 220,
+        "y": 380,
+        "hasAnnotation": true
+      },
+      "Node4": {
+        "classType": "NodeLabel",
+        "label": "CovidCase",
+        "fromDataSources": [],
+        "key": "Node4",
+        "indexes": [],
+        "properties": {
+          "Prop5": {
+            "key": "Prop5",
+            "name": "id",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop6": {
+            "key": "Prop6",
+            "name": "date",
+            "datatype": "Date",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          },
+          "Prop7": {
+            "key": "Prop7",
+            "name": "totalCases",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          },
+          "Prop8": {
+            "key": "Prop8",
+            "name": "totalDeaths",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#e91e63",
+          "stroke": "#8e0023",
+          "strokeWidth": 4,
+          "x": 680,
+          "y": 120,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "white",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "hasAnnotation": true,
+        "x": 680,
+        "y": 120
+      },
+      "Node8": {
+        "classType": "NodeLabel",
+        "label": "VaccineApproval",
+        "fromDataSources": [],
+        "key": "Node8",
+        "indexes": [],
+        "properties": {
+          "Prop9": {
+            "key": "Prop9",
+            "name": "id",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop10": {
+            "key": "Prop10",
+            "name": "vaccine",
+            "datatype": "String",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop11": {
+            "key": "Prop11",
+            "name": "date",
+            "datatype": "Date",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#8bc34a",
+          "stroke": "#3c7600",
+          "strokeWidth": 4,
+          "x": 360,
+          "y": 580,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "black",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "x": 360,
+        "y": 580,
+        "hasAnnotation": true
+      },
+      "Node14": {
+        "classType": "NodeLabel",
+        "label": "VaccinationStats",
+        "fromDataSources": [],
+        "key": "Node14",
+        "indexes": [],
+        "properties": {
+          "Prop14": {
+            "key": "Prop14",
+            "name": "id",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": true,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": true
+          },
+          "Prop15": {
+            "key": "Prop15",
+            "name": "date",
+            "datatype": "Date",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          },
+          "Prop16": {
+            "key": "Prop16",
+            "name": "totalVaccinated",
+            "datatype": "Integer",
+            "referenceData": "",
+            "description": null,
+            "fromDataSources": [],
+            "isPartOfKey": false,
+            "isArray": false,
+            "isIndexed": true,
+            "mustExist": true,
+            "hasUniqueConstraint": false
+          }
+        },
+        "secondaryNodeLabelKeys": [],
+        "isOnlySecondaryNodeLabel": false,
+        "description": null,
+        "referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+        "display": {
+          "color": "#ffeb3b",
+          "stroke": "#a89c00",
+          "strokeWidth": 4,
+          "x": 620,
+          "y": 360,
+          "radius": 40,
+          "size": "md",
+          "width": 80,
+          "height": 80,
+          "fontSize": 14,
+          "fontColor": "black",
+          "textLocation": "middle",
+          "isLocked": false,
+          "glyphs": []
+        },
+        "x": 620,
+        "y": 360,
+        "hasAnnotation": true
+      }
+    },
+    "relationshipTypes": {
+      "Rel11": {
+        "classType": "RelationshipType",
+        "key": "Rel11",
+        "type": "HAS_CASE",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node4",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel12": {
+        "classType": "RelationshipType",
+        "key": "Rel12",
+        "type": "USES",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node2",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel14": {
+        "classType": "RelationshipType",
+        "key": "Rel14",
+        "type": "APPROVED_ON",
+        "startNodeLabelKey": "Node2",
+        "endNodeLabelKey": "Node8",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      },
+      "Rel16": {
+        "classType": "RelationshipType",
+        "key": "Rel16",
+        "type": "VACCINATED_ON",
+        "startNodeLabelKey": "Node0",
+        "endNodeLabelKey": "Node14",
+        "properties": {},
+        "referenceData": {},
+        "description": null,
+        "outMinCardinality": "0",
+        "outMaxCardinality": "many",
+        "inMinCardinality": "0",
+        "inMaxCardinality": "many",
+        "display": {
+          "color": "black",
+          "fontSize": 14,
+          "strokeWidth": 3,
+          "offset": 0,
+          "glyph": null
+        }
+      }
+    }
+  }
+}

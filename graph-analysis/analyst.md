@@ -1,35 +1,36 @@
-# Teste Prático: Desenvolvimento Backend com Go e Banco de Dados Neo4J
+# Teste Prático: Desenvolvimento Backend com Banco de Dados Neo4J
 
 ## Objetivo:
 Avaliar a proficiência da pessoa candidata na linguagem Go, manipulação de bancos de dados e a capacidade de trabalhar com dados utilizando o Neo4J.
 
 ## Descrição Geral:
-A pessoa candidata deve baixar um conjunto de dados em formato CSV, realizar a carga desses dados no banco de dados Neo4J de forma eficiente, e criar uma API REST que permita a consulta ao banco de dados usando cypher query.
+A pessoa candidata deve baixar a especificação desse projeto e realizar a carga dos dados de exemplo no banco de dados Neo4J.
+Com base no modelo de grafos especificado e nos dados de exemplo carregados, a pessoa candidata deve:
+    1. Implementar uma ETL para carga de dados no formato csv usando o método que desejar.
+    2. Implementar uma api REST de acesso ao Neo4j para responder uma série de perguntas parametrizáveis pelo usuário.
 Testes devem ser implementados para a garantia da qualidade da entrega.
 
 ## Instruções
 
 ### 1. Preparação dos Dados
 
-**Download dos Dados:**
-- Baixar o conjunto de dados em formato CSV do link a seguir: [Daily COVID-19 Data (2020-2024)](https://www.kaggle.com/datasets/abdoomoh/daily-covid-19-data-2020-2024?resource=download)
-
 **Processamento e Carga no Neo4J:**
-- Com base no modelo anexo ao final do descritivo:
-- Realizar a carga desses dados para o Neo4J.
+- Com base no modelo anexo ao final do descritivo e nos dados de exemplo carregados:
+- Gerar arquivos csv que preencham as condições definidas no modelo de dados. Os dados podem ser baixados de alguma fonte pública ou até mesmo gerados aleatóriamente.
+- Realizar a carga desses dados para o Neo4J. Utilizando a ferramenta de ETL desenvolvida.
 - Deverá fornecer a documentação de como planejou e executou a carga dos dados, justificando as escolhas tomadas.
 
-### 2. Criação da API REST em Go
+### 2. Criação da API REST
 
 **API REST:**
-- Desenvolver uma API REST em Go que permita a consulta ao banco de dados Neo4J. A API deve expor endpoints que respondam algumas perguntas de forma parametrizável.
+- Desenvolver uma API REST que permita a consulta ao banco de dados Neo4J. A API deve expor endpoints que respondam algumas perguntas de forma parametrizável.
 
 **Perguntas:**
 1. Qual foi o total acumulado de casos e mortes de Covid-19 em um país específico em uma data determinada?
 2. Quantas pessoas foram vacinadas com pelo menos uma dose em um determinado país em uma data específica?
-3. Quais foram as vacinas usadas em um determinado país e em que data elas começaram a ser aplicadas?
-4. Qual país registrou o maior número de casos acumulados até uma data específica?
-5. Qual foi a vacina mais utilizada em uma região específica?
+3. Quais vacinas foram usadas em um país específico?
+4. Em quais datas as vacinas foram autorizadas para uso?
+5. Quais países usaram uma vacina específica?
 
 ### 3. Entrega e Documentação
 
@@ -47,18 +48,19 @@ Testes devem ser implementados para a garantia da qualidade da entrega.
 
 **Considerações de Performance:**
 - A pessoa candidata deve evidenciar como garantiria a performance e escalabilidade da API em um ambiente de produção, considerando o volume de dados e as consultas realizadas.
+- O Banco de dados deve estar devidamente indexado para garantir a performance das consultas.
 
 ## Avaliação
 O teste será avaliado considerando os seguintes critérios:
 
-- **Proficiência Técnica:** Qualidade e clareza do código em Go, uso adequado de técnicas e ferramentas.
+- **Proficiência Técnica:** Qualidade e clareza do código, uso adequado de técnicas e ferramentas.
 - **Adaptação aos Grafos:** Implementação correta e eficiente das perguntas utilizando Neo4J e cypher query.
 - **Qualidade de Código** Cobertura de testes e técnicas utilizadas.
 - **Documentação:** Qualidade da documentação e clareza na explicação das escolhas técnicas.
 
 ## Considerações Finais
-Este teste simula um cenário real que a pessoa candidata poderá enfrentar na posição. O foco não está apenas na solução técnica, mas também na habilidade em justificar suas decisões e produzir um código que seja eficiente e escalável.
+Este teste simula um cenário real que a pessoa candidata poderá enfrentar na posição. O foco não está apenas na solução técnica, mas também na habilidade em justificar suas decisões e produzir um código que seja simples, eficiente e escalável.
 
 ## Anexos: 
-[Especificação do modelo](./spec/README.md)
+[Especificação do modelo](./spec/analyst/README.md)
 

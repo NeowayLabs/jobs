@@ -5,6 +5,7 @@ Avaliar a proficiência da pessoa candidata na linguagem Go, manipulação de ba
 
 ## Descrição Geral:
 A pessoa candidata deve baixar um conjunto de dados em formato CSV, realizar a carga desses dados no banco de dados Neo4J de forma eficiente, e criar uma API REST em Go que permita a consulta ao banco de dados usando cypher query e algoritmos de grafos.
+A análise e adaptação do modelo para atender melhor os requisitos é importante e de livre escolha à pessoa, caso entenda que haja melhor abordagem na resolução do problema.
 Testes devem ser implementados para a garantia da qualidade da entrega.
 
 ## Instruções
@@ -84,5 +85,5 @@ O teste será avaliado considerando os seguintes critérios:
 Este teste simula um cenário real que a pessoa candidata poderá enfrentar na posição. O foco não está apenas na solução técnica, mas também na habilidade em justificar suas decisões e produzir um código que seja eficiente e escalável.
 
 ## Anexos: 
-[Especificação do modelo](./spec/README.md)
+[Especificação do modelo](./spec/specialist/README.md)
 
